@@ -1,0 +1,15 @@
+# Ignore Visual Studio settings
+.vs/
+
+# Ignore Node.js dependencies (if you add npm packages later)
+node_modules/
+
+# Ignore build outputs (if you use a framework like React/Vue/Angular)
+dist/
+build/
+
+# Ignore environment variables and secrets
+.env
+*.env
+
+# Ignore OS-specific files
