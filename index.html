@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sheet Data</title>
+</head>
+<body onload="loadData()">
+  <h1>Sheet Data</h1>
+  <div id="output"></div>
+  <script>
+    async function loadData() {
+      const res = await fetch("/api/sheet");   
+      const data = await res.json();
+      document.getElementById("output").innerText =
+        `Total Sales: ${data.totalSales}, Rows: ${data.rowCount}`;
+    }
+  </script>
+</body>
+</html>
